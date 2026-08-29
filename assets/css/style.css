@@ -46,8 +46,10 @@ section { padding: 72px 0; }
   gap: 8px;
 }
 .topbar a { color: #fff; text-decoration: none; }
-.topbar .phone { font-weight: 600; display: inline-flex; align-items: center; gap: 6px; }
+.topbar .phone { font-weight: 600; display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px; }
 .icon-inline { flex-shrink: 0; }
+.phone-main { display: inline-flex; align-items: center; gap: 6px; }
+.phone-hours::before { content: "\00a0\00b7\00a0"; }
 .lang-switch { display: flex; gap: 10px; }
 .lang-switch a { opacity: .75; }
 .lang-switch a.active { opacity: 1; font-weight: 700; text-decoration: underline; }
@@ -308,6 +310,9 @@ footer.site-footer .bottom { border-top: 1px solid rgba(255,255,255,.12); margin
   .brand-word { font-size: 17px; }
   .brand-tagline { font-size: 13px; }
   .topbar .container { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .topbar .phone { flex-direction: column; align-items: center; text-align: center; gap: 2px; width: 100%; }
+  .phone-hours::before { content: ""; }
+  .phone-hours { display: block; }
   .badge-row { gap: 8px; }
   .badge { font-size: 12px; padding: 6px 12px; }
 }
