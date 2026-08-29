@@ -1,0 +1,10 @@
+# Original source files not used by the live site (kept locally only)
+Qualifikationen_Igor-Liberchuk.png
+Therapiezimmer.jpg
+
+# Unused leftover file (superseded by logo-icon.svg / live text wordmark)
+assets/img/logo.svg
+
+# OS junk
+.DS_Store
+Thumbs.db
