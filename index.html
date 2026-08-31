@@ -12,6 +12,8 @@
 </head>
 <body>
 
+<a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
 <div class="topbar">
   <div class="container">
     <a class="phone" href="tel:+4921143632729"><span class="phone-main"><svg class="icon-inline" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.2 2.2z"/></svg> +49 211 436 32 729</span><span class="phone-hours">Sprechzeiten Mo–Mi 12–13 Uhr</span></a>
@@ -26,13 +28,22 @@
 <header class="site-header">
   <div class="container">
     <a class="brand" href="index.html">
-      <img class="brand-mark" src="assets/img/logo-icon.svg" alt=""><span class="brand-divider" aria-hidden="true"></span>
+      <img class="brand-mark" src="assets/img/logo-icon.png" alt=""><span class="brand-divider" aria-hidden="true"></span>
       <span class="brand-text">
         <span class="brand-word">liberchuk-therapie.de</span>
         <span class="brand-tagline">Neue Wege</span>
       </span>
     </a>
-    <nav class="mainnav">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainnav" aria-label="Menü öffnen" data-label-open="Menü öffnen" data-label-close="Menü schließen">
+      <svg class="nav-toggle-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <line class="ico-open" x1="4" y1="7" x2="20" y2="7"/>
+        <line class="ico-open" x1="4" y1="12" x2="20" y2="12"/>
+        <line class="ico-open" x1="4" y1="17" x2="20" y2="17"/>
+        <line class="ico-close" x1="6" y1="6" x2="18" y2="18"/>
+        <line class="ico-close" x1="18" y1="6" x2="6" y2="18"/>
+      </svg>
+    </button>
+    <nav class="mainnav" id="mainnav">
       <ul>
         <li><a href="#schwerpunkte">Schwerpunkte</a></li>
         <li><a href="#ueber-mich">Über mich</a></li>
@@ -43,6 +54,8 @@
     <a class="btn btn-primary" href="kontakt/">Termin anfragen</a>
   </div>
 </header>
+
+<main id="inhalt">
 
 <section class="hero">
   <div class="container">
@@ -60,41 +73,45 @@
       </div>
     </div>
     <div class="hero-card">
-      <div class="headline">Kontakt</div>
-      <p style="margin-bottom:18px;">Praxis für Psychotherapie<br>Igor Liberchuk</p>
-      <hr>
-      <div class="headline">Adresse</div>
-      <p>Duisburger Str. 73<br>40479 Düsseldorf</p>
-      <hr>
       <div class="headline">Telefon &amp; Sprechzeiten</div>
-      <p><a href="tel:+4921143632729" style="color:#fff;">+49 211 436 32 729</a><br>Mo–Mi, 12:00–13:00 Uhr</p>
+      <a class="tel" href="tel:+4921143632729">+49 211 436 32 729</a>
+      <p style="margin-top:6px;">Mo–Mi, 12:00–13:00 Uhr</p>
       <hr>
       <div class="headline">E-Mail</div>
-      <p><a href="mailto:info@liberchuk-therapie.de" style="color:#fff;">info@liberchuk-therapie.de</a></p>
+      <p><a href="mailto:info@liberchuk-therapie.de">info@liberchuk-therapie.de</a></p>
+      <hr>
+      <div class="headline">Praxisadresse</div>
+      <p>Igor Liberchuk<br>Duisburger Str. 73<br>40479 Düsseldorf</p>
     </div>
+  </div>
+</section>
+
+<section class="reassure">
+  <div class="container">
+    <p>Ob <strong>gesetzlich</strong> oder <strong>privat versichert</strong> – Sie sind hier richtig. Für Privatpatientinnen, Privatpatienten und Selbstzahler ist ein Ersttermin meist innerhalb von rund zwei Wochen möglich.</p>
   </div>
 </section>
 
 <div class="usp-strip">
   <div class="container">
     <div class="usp">
-      <div class="icon"><svg viewBox="0 0 40 40"><path d="M20 6 L32 11 v8 c0 8 -6 12.5 -12 15 c-6 -2.5 -12 -7 -12 -15 v-8 z"/><path d="M14 20 l4.5 4.5 l7.5 -9" class="accent"/></svg></div>
+      <div class="icon"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 6 L32 11 v8 c0 8 -6 12.5 -12 15 c-6 -2.5 -12 -7 -12 -15 v-8 z"/><path d="M14 20 l4.5 4.5 l7.5 -9" class="accent"/></svg></div>
       <div>
-        <h3>Alle Kassen &amp; Beihilfe</h3>
+        <h2>Alle Kassen &amp; Beihilfe</h2>
         <p>Abrechnung mit gesetzlichen und privaten Krankenkassen sowie Beihilfestellen</p>
       </div>
     </div>
     <div class="usp">
-      <div class="icon"><svg viewBox="0 0 40 40"><path d="M20 11 L34 17 L20 23 L6 17 Z"/><path d="M12 19.5 v6 c0 2.2 3.6 4 8 4 s8 -1.8 8 -4 v-6"/><line class="accent" x1="30.5" y1="18" x2="30.5" y2="27"/><circle class="accent-fill" cx="30.5" cy="28" r="1.3"/></svg></div>
+      <div class="icon"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 11 L34 17 L20 23 L6 17 Z"/><path d="M12 19.5 v6 c0 2.2 3.6 4 8 4 s8 -1.8 8 -4 v-6"/><line class="accent" x1="30.5" y1="18" x2="30.5" y2="27"/><circle class="accent-fill" cx="30.5" cy="28" r="1.3"/></svg></div>
       <div>
-        <h3>Wissenschaftlich fundiert</h3>
+        <h2>Wissenschaftlich fundiert</h2>
         <p>Verhaltenstherapie nach aktuellem fachlichen Standard, laufende Fortbildung</p>
       </div>
     </div>
     <div class="usp">
-      <div class="icon"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="12"/><ellipse cx="20" cy="20" rx="5" ry="12"/><line x1="8" y1="20" x2="32" y2="20"/></svg></div>
+      <div class="icon"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="12"/><ellipse cx="20" cy="20" rx="5" ry="12"/><line x1="8" y1="20" x2="32" y2="20"/></svg></div>
       <div>
-        <h3>Mehrsprachig</h3>
+        <h2>Mehrsprachig</h2>
         <p>Therapie auch auf Russisch und Ukrainisch möglich</p>
       </div>
     </div>
@@ -104,7 +121,6 @@
 <section id="schwerpunkte">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">Schwerpunkte</span>
       <h2>Worauf ich mich spezialisiert habe</h2>
       <p>Fundierte, individuell abgestimmte Behandlung – für gesetzlich Versicherte, privat Versicherte und Selbstzahler.</p>
     </div>
@@ -169,10 +185,10 @@
 
 <section id="ueber-mich" class="about-teaser">
   <div class="container">
-    <div class="portrait-frame"><img src="assets/img/igor-portrait.png" alt="Igor Liberchuk, Psychologischer Psychotherapeut" loading="lazy"></div>
+    <div class="portrait-frame"><img src="assets/img/igor-portrait.webp" alt="Igor Liberchuk, Psychologischer Psychotherapeut" loading="lazy" width="579" height="546"></div>
     <div>
       <span class="eyebrow">Über mich</span>
-      <h2>M. Sc. – Psych. Igor Liberchuk</h2>
+      <h2>Igor Liberchuk</h2>
       <p>Approbierter Psychologischer Psychotherapeut mit Schwerpunkt Verhaltenstherapie. Eintrag im Arztregister der Kassenärztlichen Vereinigung Nordrhein, Mitglied der Psychotherapeutenkammer NRW. Meine Wurzeln liegen in der Ukraine – ich bin zweisprachig aufgewachsen und biete Therapie auch auf Russisch und Ukrainisch an.</p>
       <ul class="quali-list">
         <li>Approbation als Psychologischer Psychotherapeut seit 2018</li>
@@ -187,9 +203,8 @@
 
 <section class="reviews">
   <div class="container" style="text-align:center;">
-    <span class="eyebrow">Bewertungen</span>
-    <h2>Das sagen meine Patientinnen und Patienten</h2>
-    <p style="color:var(--text-soft); max-width:60ch; margin:0 auto 24px;">Echte Erfahrungsberichte finden Sie auf unabhängigen Bewertungsportalen.</p>
+    <h2>Bewertungen – unabhängig nachlesen</h2>
+    <p style="color:var(--text-soft); max-width:60ch; margin:0 auto 24px;">Erfahrungsberichte von Patientinnen und Patienten finden Sie auf Jameda und bei Google.</p>
     <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
       <a class="btn btn-outline" href="https://www.jameda.de/igor-liberchuk/psychologischer-psychotherapeut/duesseldorf" target="_blank" rel="noopener">Bewertungen auf Jameda ansehen</a>
       <a class="btn btn-outline" href="https://www.google.com/maps?cid=5978223149243128836" target="_blank" rel="noopener">Bewertungen auf Google ansehen</a>
@@ -200,19 +215,25 @@
 <section id="kontakt" class="kontakt alt-bg">
   <div class="container" style="grid-template-columns:1fr; text-align:center;">
     <div>
-      <span class="eyebrow">Kontakt</span>
-      <h2>Bereit für den ersten Schritt?</h2>
-      <p style="color:var(--text-soft); max-width:60ch; margin:0 auto 24px;">Auf der Kontaktseite finden Sie, wie die Terminvereinbarung für Ihr Anliegen funktioniert – inklusive Sprechzeiten und Adresse.</p>
-      <a class="btn btn-primary" href="kontakt/">Zur Kontaktseite</a>
+      <h2>So vereinbaren Sie einen Termin</h2>
+      <p style="color:var(--text-soft); max-width:62ch; margin:0 auto 22px;">
+        <strong>Erstgespräch (allgemeine Psychotherapie):</strong> telefonisch unter
+        <a href="tel:+4921143632729" style="text-decoration:underline;">+49 211 436 32 729</a>, Mo–Mi 12:00–13:00 Uhr.<br>
+        <strong>ADHS-Diagnostik:</strong> per E-Mail an
+        <a href="mailto:diagnostik@liberchuk-therapie.de" style="text-decoration:underline;">diagnostik@liberchuk-therapie.de</a>.
+      </p>
+      <a class="btn btn-primary" href="kontakt/">Alle Details auf der Kontaktseite</a>
     </div>
   </div>
 </section>
+
+</main>
 
 <footer class="site-footer">
   <div class="container">
     <div class="cols">
       <div>
-        <h4>liberchuk-therapie.de</h4>
+        <h2>liberchuk-therapie.de</h2>
         <ul>
           <li>Duisburger Str. 73, 40479 Düsseldorf</li>
           <li><a href="tel:+4921143632729">+49 211 436 32 729</a></li>
@@ -220,7 +241,7 @@
         </ul>
       </div>
       <div>
-        <h4>Schwerpunkte</h4>
+        <h2>Schwerpunkte</h2>
         <ul>
           <li><a href="adhs-diagnostik/">ADHS-Diagnostik</a></li>
           <li><a href="zwangserkrankungen/">Zwangserkrankungen</a></li>
@@ -230,7 +251,7 @@
         </ul>
       </div>
       <div>
-        <h4>Rechtliches</h4>
+        <h2>Rechtliches</h2>
         <ul>
           <li><a href="impressum/">Impressum</a></li>
           <li><a href="datenschutz/">Datenschutzerklärung</a></li>
@@ -241,6 +262,9 @@
     <div class="bottom">© 2026 Igor Liberchuk · Psychologischer Psychotherapeut · Psychotherapeutenkammer NRW</div>
   </div>
 </footer>
+
+<script src="assets/js/nav.js" defer></script>
+<script src="assets/js/reveal.js" defer></script>
 
 </body>
 </html>

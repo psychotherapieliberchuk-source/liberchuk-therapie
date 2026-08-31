@@ -12,6 +12,8 @@
 </head>
 <body>
 
+<a class="skip-link" href="#inhalt">Перейти к содержимому</a>
+
 <div class="topbar">
   <div class="container">
     <a class="phone" href="tel:+4921143632729"><span class="phone-main"><svg class="icon-inline" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.2 2.2z"/></svg> +49 211 436 32 729</span><span class="phone-hours">Часы приёма: пн–ср, 12:00–13:00</span></a>
@@ -26,13 +28,22 @@
 <header class="site-header">
   <div class="container">
     <a class="brand" href="index.html">
-      <img class="brand-mark" src="../assets/img/logo-icon.svg" alt=""><span class="brand-divider" aria-hidden="true"></span>
+      <img class="brand-mark" src="../assets/img/logo-icon.png" alt=""><span class="brand-divider" aria-hidden="true"></span>
       <span class="brand-text">
         <span class="brand-word">liberchuk-therapie.de</span>
         <span class="brand-tagline">Новые пути</span>
       </span>
     </a>
-    <nav class="mainnav">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainnav" aria-label="Открыть меню" data-label-open="Открыть меню" data-label-close="Закрыть меню">
+      <svg class="nav-toggle-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <line class="ico-open" x1="4" y1="7" x2="20" y2="7"/>
+        <line class="ico-open" x1="4" y1="12" x2="20" y2="12"/>
+        <line class="ico-open" x1="4" y1="17" x2="20" y2="17"/>
+        <line class="ico-close" x1="6" y1="6" x2="18" y2="18"/>
+        <line class="ico-close" x1="18" y1="6" x2="6" y2="18"/>
+      </svg>
+    </button>
+    <nav class="mainnav" id="mainnav">
       <ul>
         <li><a href="#schwerpunkte">Направления</a></li>
         <li><a href="#ueber-mich">Обо мне</a></li>
@@ -44,6 +55,8 @@
   </div>
 </header>
 
+<main id="inhalt">
+
 <section class="hero">
   <div class="container">
     <div>
@@ -53,48 +66,52 @@
         <a class="btn btn-primary" href="kontakt/">Записаться на приём</a>
       </div>
       <div class="badge-row">
-        <span class="badge">Аттестация с 2018 года</span>
+        <span class="badge">Аппробация с 2018 года</span>
         <span class="badge">Допуск от кассы KV Nordrhein</span>
         <span class="badge">Член Психотерапевтической палаты NRW</span>
         <span class="badge">Немецкий · Русский · Украинский</span>
       </div>
     </div>
     <div class="hero-card">
-      <div class="headline">Контакты</div>
-      <p style="margin-bottom:18px;">Praxis für Psychotherapie<br>Igor Liberchuk</p>
-      <hr>
-      <div class="headline">Адрес</div>
-      <p>Duisburger Str. 73<br>40479 Düsseldorf</p>
-      <hr>
       <div class="headline">Телефон и часы приёма</div>
-      <p><a href="tel:+4921143632729" style="color:#fff;">+49 211 436 32 729</a><br>Пн–Ср, 12:00–13:00</p>
+      <a class="tel" href="tel:+4921143632729">+49 211 436 32 729</a>
+      <p style="margin-top:6px;">Пн–Ср, 12:00–13:00</p>
       <hr>
       <div class="headline">E-Mail</div>
-      <p><a href="mailto:info@liberchuk-therapie.de" style="color:#fff;">info@liberchuk-therapie.de</a></p>
+      <p><a href="mailto:info@liberchuk-therapie.de">info@liberchuk-therapie.de</a></p>
+      <hr>
+      <div class="headline">Адрес практики</div>
+      <p>Igor Liberchuk<br>Duisburger Str. 73<br>40479 Düsseldorf</p>
     </div>
+  </div>
+</section>
+
+<section class="reassure">
+  <div class="container">
+    <p>Неважно, есть ли у вас государственная или частная страховка, — вы обратились по адресу. Для пациентов частного страхования и самостоятельно оплачивающих первичный приём, как правило, возможен в течение примерно двух недель.</p>
   </div>
 </section>
 
 <div class="usp-strip">
   <div class="container">
     <div class="usp">
-      <div class="icon"><svg viewBox="0 0 40 40"><path d="M20 6 L32 11 v8 c0 8 -6 12.5 -12 15 c-6 -2.5 -12 -7 -12 -15 v-8 z"/><path d="M14 20 l4.5 4.5 l7.5 -9" class="accent"/></svg></div>
+      <div class="icon"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 6 L32 11 v8 c0 8 -6 12.5 -12 15 c-6 -2.5 -12 -7 -12 -15 v-8 z"/><path d="M14 20 l4.5 4.5 l7.5 -9" class="accent"/></svg></div>
       <div>
-        <h3>Государственное и частное страхование</h3>
+        <h2>Государственное и частное страхование</h2>
         <p>Оплата через государственное и частное медицинское страхование, а также органы социальной помощи</p>
       </div>
     </div>
     <div class="usp">
-      <div class="icon"><svg viewBox="0 0 40 40"><path d="M20 11 L34 17 L20 23 L6 17 Z"/><path d="M12 19.5 v6 c0 2.2 3.6 4 8 4 s8 -1.8 8 -4 v-6"/><line class="accent" x1="30.5" y1="18" x2="30.5" y2="27"/><circle class="accent-fill" cx="30.5" cy="28" r="1.3"/></svg></div>
+      <div class="icon"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 11 L34 17 L20 23 L6 17 Z"/><path d="M12 19.5 v6 c0 2.2 3.6 4 8 4 s8 -1.8 8 -4 v-6"/><line class="accent" x1="30.5" y1="18" x2="30.5" y2="27"/><circle class="accent-fill" cx="30.5" cy="28" r="1.3"/></svg></div>
       <div>
-        <h3>Научно обоснованный подход</h3>
+        <h2>Научно обоснованный подход</h2>
         <p>Поведенческая терапия по актуальным профессиональным стандартам, регулярное повышение квалификации</p>
       </div>
     </div>
     <div class="usp">
-      <div class="icon"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="12"/><ellipse cx="20" cy="20" rx="5" ry="12"/><line x1="8" y1="20" x2="32" y2="20"/></svg></div>
+      <div class="icon"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="12"/><ellipse cx="20" cy="20" rx="5" ry="12"/><line x1="8" y1="20" x2="32" y2="20"/></svg></div>
       <div>
-        <h3>Многоязычие</h3>
+        <h2>Многоязычие</h2>
         <p>Приём также на русском и украинском языках</p>
       </div>
     </div>
@@ -104,7 +121,6 @@
 <section id="schwerpunkte">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">Направления</span>
       <h2>На чём я специализируюсь</h2>
       <p>Обоснованное, индивидуально подобранное лечение — для пациентов государственного и частного медицинского страхования, а также самостоятельно оплачивающих.</p>
     </div>
@@ -169,13 +185,13 @@
 
 <section id="ueber-mich" class="about-teaser">
   <div class="container">
-    <div class="portrait-frame"><img src="../assets/img/igor-portrait.png" alt="Igor Liberchuk, психологический психотерапевт" loading="lazy"></div>
+    <div class="portrait-frame"><img src="../assets/img/igor-portrait.webp" alt="Igor Liberchuk, психологический психотерапевт" loading="lazy" width="579" height="546"></div>
     <div>
       <span class="eyebrow">Обо мне</span>
-      <h2>M. Sc. – психолог Igor Liberchuk</h2>
-      <p>Дипломированный психологический психотерапевт (Approbation) со специализацией в поведенческой терапии. Внесён в реестр врачей Кассового врачебного объединения земли Северный Рейн (KV Nordrhein), член Психотерапевтической палаты NRW. Мои корни — на Украине, я вырос билингвом и провожу терапию также на русском и украинском языках.</p>
+      <h2>Igor Liberchuk</h2>
+      <p>Дипломированный психологический психотерапевт (Аппробация) со специализацией в поведенческой терапии. Внесён в реестр врачей Кассового врачебного объединения земли Северный Рейн (KV Nordrhein), член Психотерапевтической палаты NRW. Мои корни — на Украине, я вырос билингвом и провожу терапию также на русском и украинском языках.</p>
       <ul class="quali-list">
-        <li>Допуск к самостоятельной психотерапевтической деятельности (Approbation) с 2018 года</li>
+        <li>Допуск к самостоятельной психотерапевтической деятельности (Аппробация) с 2018 года</li>
         <li>Master of Advanced Studies in Psychotherapie, Бернский университет</li>
         <li>M. Sc. клиническая психология, Рурский университет Бохума</li>
         <li>Многолетний клинический опыт, в т. ч. клиника Helios Дуйсбург, LVR-Klinikum Эссен</li>
@@ -187,9 +203,8 @@
 
 <section class="reviews">
   <div class="container" style="text-align:center;">
-    <span class="eyebrow">Отзывы</span>
-    <h2>Что говорят мои пациенты</h2>
-    <p style="color:var(--text-soft); max-width:60ch; margin:0 auto 24px;">Реальные отзывы можно найти на независимых платформах отзывов.</p>
+    <h2>Отзывы — на независимых площадках</h2>
+    <p style="color:var(--text-soft); max-width:60ch; margin:0 auto 24px;">Отзывы пациентов вы найдёте на Jameda и в Google.</p>
     <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
       <a class="btn btn-outline" href="https://www.jameda.de/igor-liberchuk/psychologischer-psychotherapeut/duesseldorf" target="_blank" rel="noopener">Отзывы на Jameda</a>
       <a class="btn btn-outline" href="https://www.google.com/maps?cid=5978223149243128836" target="_blank" rel="noopener">Отзывы на Google</a>
@@ -200,19 +215,25 @@
 <section id="kontakt" class="kontakt alt-bg">
   <div class="container" style="grid-template-columns:1fr; text-align:center;">
     <div>
-      <span class="eyebrow">Контакты</span>
-      <h2>Готовы сделать первый шаг?</h2>
-      <p style="color:var(--text-soft); max-width:60ch; margin:0 auto 24px;">На странице контактов вы найдёте, как записаться на приём в зависимости от вашего запроса — включая часы приёма и адрес.</p>
-      <a class="btn btn-primary" href="kontakt/">На страницу контактов</a>
+      <h2>Как записаться на приём</h2>
+      <p style="color:var(--text-soft); max-width:62ch; margin:0 auto 22px;">
+        <strong>Первичная консультация (общая психотерапия):</strong> по телефону
+        <a href="tel:+4921143632729" style="text-decoration:underline;">+49 211 436 32 729</a>, пн–ср 12:00–13:00.<br>
+        <strong>Диагностика СДВГ:</strong> по электронной почте
+        <a href="mailto:diagnostik@liberchuk-therapie.de" style="text-decoration:underline;">diagnostik@liberchuk-therapie.de</a>.
+      </p>
+      <a class="btn btn-primary" href="kontakt/">Все подробности на странице контактов</a>
     </div>
   </div>
 </section>
+
+</main>
 
 <footer class="site-footer">
   <div class="container">
     <div class="cols">
       <div>
-        <h4>liberchuk-therapie.de</h4>
+        <h2>liberchuk-therapie.de</h2>
         <ul>
           <li>Duisburger Str. 73, 40479 Düsseldorf</li>
           <li><a href="tel:+4921143632729">+49 211 436 32 729</a></li>
@@ -220,7 +241,7 @@
         </ul>
       </div>
       <div>
-        <h4>Направления</h4>
+        <h2>Направления</h2>
         <ul>
           <li><a href="adhs-diagnostik/">Диагностика СДВГ</a></li>
           <li><a href="zwangserkrankungen/">ОКР</a></li>
@@ -230,7 +251,7 @@
         </ul>
       </div>
       <div>
-        <h4>Юридическая информация</h4>
+        <h2>Юридическая информация</h2>
         <ul>
           <li><a href="../impressum/">Impressum</a></li>
           <li><a href="../datenschutz/">Datenschutzerklärung</a></li>
@@ -238,9 +259,12 @@
         </ul>
       </div>
     </div>
-    <div class="bottom">© 2026 Igor Liberchuk · психологический психотерапевт · Psychotherapeutenkammer NRW</div>
+    <div class="bottom">© 2026 Igor Liberchuk · психологический психотерапевт · Психотерапевтическая палата NRW</div>
   </div>
 </footer>
+
+<script src="../assets/js/nav.js" defer></script>
+<script src="../assets/js/reveal.js" defer></script>
 
 </body>
 </html>

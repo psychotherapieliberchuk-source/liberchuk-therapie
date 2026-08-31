@@ -4,13 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Обо мне – Igor Liberchuk, психологический психотерапевт в Дюссельдорфе | liberchuk-therapie.de</title>
-<meta name="description" content="M. Sc. – психолог Igor Liberchuk: дипломированный психологический психотерапевт в Дюссельдорфе, специализация — поведенческая терапия. Образование, квалификация и профессиональный опыт.">
+<meta name="description" content="Igor Liberchuk — дипломированный психологический психотерапевт в Дюссельдорфе, специализация — поведенческая терапия. Образование, квалификация и профессиональный опыт.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
+
+<a class="skip-link" href="#inhalt">Перейти к содержимому</a>
 
 <div class="topbar">
   <div class="container">
@@ -26,13 +28,22 @@
 <header class="site-header">
   <div class="container">
     <a class="brand" href="../index.html">
-      <img class="brand-mark" src="../../assets/img/logo-icon.svg" alt=""><span class="brand-divider" aria-hidden="true"></span>
+      <img class="brand-mark" src="../../assets/img/logo-icon.png" alt=""><span class="brand-divider" aria-hidden="true"></span>
       <span class="brand-text">
         <span class="brand-word">liberchuk-therapie.de</span>
         <span class="brand-tagline">Новые пути</span>
       </span>
     </a>
-    <nav class="mainnav">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainnav" aria-label="Открыть меню" data-label-open="Открыть меню" data-label-close="Закрыть меню">
+      <svg class="nav-toggle-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <line class="ico-open" x1="4" y1="7" x2="20" y2="7"/>
+        <line class="ico-open" x1="4" y1="12" x2="20" y2="12"/>
+        <line class="ico-open" x1="4" y1="17" x2="20" y2="17"/>
+        <line class="ico-close" x1="6" y1="6" x2="18" y2="18"/>
+        <line class="ico-close" x1="18" y1="6" x2="6" y2="18"/>
+      </svg>
+    </button>
+    <nav class="mainnav" id="mainnav">
       <ul>
         <li><a href="../index.html#schwerpunkte">Направления</a></li>
         <li><a href="index.html">Обо мне</a></li>
@@ -44,13 +55,15 @@
   </div>
 </header>
 
+<main id="inhalt">
+
 <div class="container">
   <div class="breadcrumb"><a href="../index.html">Главная</a> / Обо мне</div>
 </div>
 
 <section class="page-hero">
   <div class="container">
-    <div class="subhead">M. Sc. – психолог Igor Liberchuk</div>
+    <div class="subhead">Igor Liberchuk</div>
     <h1>Обо мне</h1>
     <p class="lead">Рад, что вы хотите узнать обо мне больше.</p>
   </div>
@@ -66,7 +79,7 @@
     <h3>Квалификация</h3>
     <ul>
       <li>2018 — внесение в реестр врачей</li>
-      <li>2018 — допуск к психотерапевтической деятельности (Approbation)</li>
+      <li>2018 — допуск к психотерапевтической деятельности (Аппробация)</li>
       <li>2015–2018 — Master of Advanced Studies in Psychotherapie, Бернский университет</li>
       <li>2013–2018 — обучение психологического психотерапевта, академия DGVT, Дортмунд</li>
       <li>2011–2013 — магистратура, Рурский университет Бохума: M. Sc. клиническая психология</li>
@@ -84,16 +97,18 @@
     </ul>
 
     <h2>Моя философия</h2>
-    <p>Каждый человек несёт в себе способность находить новые пути — к большей удовлетворённости, внутренней стабильности и качеству жизни. Поэтому в моей практике в центре внимания стоят именно ваши потребности, отношения и цели: со мной вы — личность, а не случай по шаблону. В безопасной, доверительной атмосфере вы можете открыто говорить о мыслях, чувствах и переживаниях. Вместе, шаг за шагом, мы находим путь, который подходит именно вам и держит вас долгосрочно.</p>
-    <p>Будь то стресс, тревога, депрессивные симптомы или другие личные и профессиональные нагрузки привели вас ко мне — этот путь вам не нужно проходить в одиночку. Я профессионально, с уважением и научно обоснованными методами сопровождаю вас в поиске новых путей, которые действительно подходят вашей жизни. Если вы чувствуете, что настало время перемен, я тепло приглашаю вас сделать первый шаг вместе со мной.</p>
+    <p>Каждый человек несёт в себе способность находить новые пути — к большей удовлетворённости, внутренней стабильности и качеству жизни. Поэтому в моей практике в центре внимания стоят именно ваши потребности, отношения и цели: со мной вы — личность, а не шаблонный случай. В безопасной, доверительной атмосфере вы можете открыто говорить о мыслях, чувствах и переживаниях. Вместе, шаг за шагом, мы находим путь, который подходит именно вам и поддерживает вас в долгосрочной перспективе.</p>
+    <p>Что бы вас ко мне ни привело — стресс, тревога, депрессивные симптомы или другие личные и профессиональные нагрузки, — этот путь вам не нужно проходить в одиночку. Я профессионально, с уважением и научно обоснованными методами сопровождаю вас в поиске новых путей, которые действительно подходят вашей жизни. Если вы чувствуете, что настало время перемен, я тепло приглашаю вас сделать первый шаг вместе со мной.</p>
   </div>
 </section>
+
+</main>
 
 <footer class="site-footer">
   <div class="container">
     <div class="cols">
       <div>
-        <h4>liberchuk-therapie.de</h4>
+        <h2>liberchuk-therapie.de</h2>
         <ul>
           <li>Duisburger Str. 73, 40479 Düsseldorf</li>
           <li><a href="tel:+4921143632729">+49 211 436 32 729</a></li>
@@ -101,7 +116,7 @@
         </ul>
       </div>
       <div>
-        <h4>Направления</h4>
+        <h2>Направления</h2>
         <ul>
           <li><a href="../adhs-diagnostik/">Диагностика СДВГ</a></li>
           <li><a href="../zwangserkrankungen/">ОКР</a></li>
@@ -111,7 +126,7 @@
         </ul>
       </div>
       <div>
-        <h4>Юридическая информация</h4>
+        <h2>Юридическая информация</h2>
         <ul>
           <li><a href="../../impressum/">Impressum</a></li>
           <li><a href="../../datenschutz/">Datenschutzerklärung</a></li>
@@ -119,9 +134,11 @@
         </ul>
       </div>
     </div>
-    <div class="bottom">© 2026 Igor Liberchuk · психологический психотерапевт · Psychotherapeutenkammer NRW</div>
+    <div class="bottom">© 2026 Igor Liberchuk · психологический психотерапевт · Психотерапевтическая палата NRW</div>
   </div>
 </footer>
+
+<script src="../../assets/js/nav.js" defer></script>
 
 </body>
 </html>

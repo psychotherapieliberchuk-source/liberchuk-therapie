@@ -4,13 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Über mich – Igor Liberchuk, Psychologischer Psychotherapeut Düsseldorf | liberchuk-therapie.de</title>
-<meta name="description" content="M. Sc. – Psych. Igor Liberchuk: approbierter Psychologischer Psychotherapeut in Düsseldorf, Schwerpunkt Verhaltenstherapie. Werdegang, Qualifikationen, Berufserfahrung und therapeutische Philosophie.">
+<meta name="description" content="Igor Liberchuk, approbierter Psychologischer Psychotherapeut in Düsseldorf, Schwerpunkt Verhaltenstherapie. Werdegang, Qualifikationen, Berufserfahrung und therapeutische Philosophie.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
+
+<a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
 
 <div class="topbar">
   <div class="container">
@@ -26,13 +28,22 @@
 <header class="site-header">
   <div class="container">
     <a class="brand" href="../index.html">
-      <img class="brand-mark" src="../assets/img/logo-icon.svg" alt=""><span class="brand-divider" aria-hidden="true"></span>
+      <img class="brand-mark" src="../assets/img/logo-icon.png" alt=""><span class="brand-divider" aria-hidden="true"></span>
       <span class="brand-text">
         <span class="brand-word">liberchuk-therapie.de</span>
         <span class="brand-tagline">Neue Wege</span>
       </span>
     </a>
-    <nav class="mainnav">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainnav" aria-label="Menü öffnen" data-label-open="Menü öffnen" data-label-close="Menü schließen">
+      <svg class="nav-toggle-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <line class="ico-open" x1="4" y1="7" x2="20" y2="7"/>
+        <line class="ico-open" x1="4" y1="12" x2="20" y2="12"/>
+        <line class="ico-open" x1="4" y1="17" x2="20" y2="17"/>
+        <line class="ico-close" x1="6" y1="6" x2="18" y2="18"/>
+        <line class="ico-close" x1="18" y1="6" x2="6" y2="18"/>
+      </svg>
+    </button>
+    <nav class="mainnav" id="mainnav">
       <ul>
         <li><a href="../index.html#schwerpunkte">Schwerpunkte</a></li>
         <li><a href="index.html">Über mich</a></li>
@@ -44,13 +55,15 @@
   </div>
 </header>
 
+<main id="inhalt">
+
 <div class="container">
   <div class="breadcrumb"><a href="../index.html">Start</a> / Über mich</div>
 </div>
 
 <section class="page-hero">
   <div class="container">
-    <div class="subhead">M. Sc. – Psych. Igor Liberchuk</div>
+    <div class="subhead">Igor Liberchuk</div>
     <h1>Über mich</h1>
     <p class="lead">Schön, dass Sie mehr über mich erfahren möchten.</p>
   </div>
@@ -89,11 +102,13 @@
   </div>
 </section>
 
+</main>
+
 <footer class="site-footer">
   <div class="container">
     <div class="cols">
       <div>
-        <h4>liberchuk-therapie.de</h4>
+        <h2>liberchuk-therapie.de</h2>
         <ul>
           <li>Duisburger Str. 73, 40479 Düsseldorf</li>
           <li><a href="tel:+4921143632729">+49 211 436 32 729</a></li>
@@ -101,7 +116,7 @@
         </ul>
       </div>
       <div>
-        <h4>Schwerpunkte</h4>
+        <h2>Schwerpunkte</h2>
         <ul>
           <li><a href="../adhs-diagnostik/">ADHS-Diagnostik</a></li>
           <li><a href="../zwangserkrankungen/">Zwangserkrankungen</a></li>
@@ -111,7 +126,7 @@
         </ul>
       </div>
       <div>
-        <h4>Rechtliches</h4>
+        <h2>Rechtliches</h2>
         <ul>
           <li><a href="../impressum/">Impressum</a></li>
           <li><a href="../datenschutz/">Datenschutzerklärung</a></li>
@@ -122,6 +137,8 @@
     <div class="bottom">© 2026 Igor Liberchuk · Psychologischer Psychotherapeut · Psychotherapeutenkammer NRW</div>
   </div>
 </footer>
+
+<script src="../assets/js/nav.js" defer></script>
 
 </body>
 </html>
