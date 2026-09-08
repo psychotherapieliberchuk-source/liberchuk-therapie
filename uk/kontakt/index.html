@@ -118,6 +118,13 @@
     <p>Практика психотерапії – Igor Liberchuk<br>
     <a href="https://maps.app.goo.gl/rpdqdiaHmppJdaRN8" target="_blank" rel="noopener">Duisburger Str. 73, 40479 Düsseldorf ↗</a></p>
 
+    <div class="mapbox" data-embed="https://maps.google.com/maps?q=Duisburger%20Str.%2073%2C%2040479%20D%C3%BCsseldorf&z=16&output=embed" data-title="Карта Google Maps: Duisburger Str. 73, 40479 Düsseldorf">
+      <div class="mapbox-prompt">
+        <p class="mapbox-title">Місцезнаходження на Google Maps</p>
+        <p class="mapbox-note">Під час завантаження карти дані — зокрема ваша IP-адреса — передаються до Google. Детальніше в <a href="../../datenschutz/">політиці конфіденційності</a>.</p>
+        <button type="button" class="mapbox-load">Завантажити карту</button>
+      </div>
+    </div>
     <div class="room-photo" style="max-width:500px; margin-left:auto; margin-right:auto;"><img src="../../assets/img/praxis/praxisraum-1.jpg" alt="Кабінет практики Liberchuk Therapie у Дюссельдорфі" loading="lazy"></div>
   </div>
 </section>
@@ -159,6 +166,24 @@
 </footer>
 
 <script src="../../assets/js/nav.js" defer></script>
-
+<script>
+(function () {
+  var box = document.querySelector(".mapbox");
+  if (!box) return;
+  var btn = box.querySelector(".mapbox-load");
+  btn.addEventListener("click", function () {
+    var f = document.createElement("iframe");
+    f.src = box.getAttribute("data-embed");
+    f.title = box.getAttribute("data-title");
+    f.loading = "lazy";
+    f.className = "mapbox-frame";
+    f.setAttribute("referrerpolicy", "no-referrer-when-downgrade");
+    f.setAttribute("allowfullscreen", "");
+    box.innerHTML = "";
+    box.classList.add("is-loaded");
+    box.appendChild(f);
+  });
+})();
+</script>
 </body>
 </html>
