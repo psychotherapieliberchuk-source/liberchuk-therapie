@@ -12,7 +12,7 @@
 <link rel="alternate" hreflang="x-default" href="https://liberchuk-therapie.de/suchttherapie/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&amp;family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
@@ -23,24 +23,101 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Start",
-      "item": "https://liberchuk-therapie.de/"
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Start",
+          "item": "https://liberchuk-therapie.de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Schwerpunkte",
+          "item": "https://liberchuk-therapie.de/#schwerpunkte"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Suchttherapie"
+        }
+      ]
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Schwerpunkte",
-      "item": "https://liberchuk-therapie.de/#schwerpunkte"
+      "@type": "MedicalTherapy",
+      "@id": "https://liberchuk-therapie.de/suchttherapie/#service",
+      "name": "Suchtberatung und Suchttherapie",
+      "url": "https://liberchuk-therapie.de/suchttherapie/",
+      "provider": {
+        "@id": "https://liberchuk-therapie.de/#practice"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Düsseldorf"
+      },
+      "availableLanguage": [
+        "de",
+        "ru",
+        "uk"
+      ]
     },
     {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Suchttherapie"
+      "@type": "FAQPage",
+      "@id": "https://liberchuk-therapie.de/suchttherapie/#faq",
+      "inLanguage": "de",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Behandeln Sie auch Alkoholabhängigkeit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Die Behandlung richtet sich an Menschen mit stoffgebundenen oder Verhaltenssüchten – mit Ausnahme von Alkoholabhängigkeit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie gehen Sie in der Suchtbehandlung vor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ein zentrales Element ist die motivierende Gesprächsführung (Motivational Interviewing). Dabei geht es darum, eigene Beweggründe für Veränderung zu klären, statt Druck aufzubauen. Ergänzend arbeite ich verhaltenstherapeutisch an auslösenden Situationen, Bewältigungsstrategien und Rückfallprophylaxe."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wird meine Behandlung vertraulich behandelt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Als Psychologischer Psychotherapeut unterliege ich der gesetzlichen Schweigepflicht. Inhalte der Behandlung werden nicht ohne Ihre ausdrückliche Einwilligung weitergegeben."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was kostet eine Therapiesitzung?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Für Selbstzahler und privat Versicherte wird nach der Gebührenordnung für Ärzte (GOÄ, analog) abgerechnet: 153 € pro Sitzung à 50 Minuten. Bei gesetzlich Versicherten rechne ich direkt über die Kassenärztliche Vereinigung ab – Sie gehen nicht in Vorleistung."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie schnell bekomme ich einen Termin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Für Selbstzahler und privat Versicherte liegt die Wartezeit auf einen Ersttermin in der Regel bei etwa 2 Wochen. Gesetzlich Versicherte kommen nach einem Erstgespräch auf die Warteliste; dort beträgt die Wartezeit derzeit im Schnitt 6 bis 9 Monate. Grund ist die gesetzliche Regulierung: Begrenzt sind sowohl die Zahl der Kassensitze für Psychotherapie als auch die Behandlungskapazität, die eine einzelne Praxis für gesetzlich Versicherte bereitstellen darf."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mit welchen Methoden arbeiten Sie?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mein Schwerpunkt ist ausschließlich die Verhaltenstherapie. Durch meine Erfahrung in Kliniken und im tiefenpsychologischen Bereich fließen je nach Anliegen Elemente aus Schematherapie, achtsamkeitsbasierten Verfahren sowie DBT und Skills-Training ein."
+          }
+        }
+      ]
     }
   ]
 }
@@ -133,8 +210,40 @@
 
     <div class="callout">In der Praxis stehen Empathie, Diskretion und wissenschaftlich fundierte Methoden im Mittelpunkt. Schritt für Schritt unterstütze ich Sie dabei, Rückfälle zu vermeiden, Ursachen zu verstehen und neue Bewältigungsstrategien aufzubauen.</div>
 
-    <h2>Kostenübernahme &amp; Zugang zur Therapie</h2>
-    <p>Die Behandlung wird mit gesetzlichen und privaten Krankenkassen sowie Beihilfestellen abgerechnet. Auch Selbstzahler sind herzlich willkommen und profitieren von kurzen Wartezeiten und individueller Betreuung.</p>
+    <h2>Kosten &amp; Zugang zur Therapie</h2>
+    <ul>
+      <li><strong>Gesetzlich Versicherte:</strong> Ich habe eine Kassenzulassung; die Abrechnung läuft direkt über die Kassenärztliche Vereinigung. Sie müssen nicht in Vorleistung gehen. Nach einem Erstgespräch erfolgt die Aufnahme auf die Warteliste – die Wartezeit beträgt derzeit im Schnitt 6 bis 9 Monate.</li>
+      <li><strong>Privat Versicherte, Beihilfe und Selbstzahler:</strong> Abrechnung nach der Gebührenordnung für Ärzte (GOÄ, analog angewandt) – <strong>153 € pro Sitzung à 50 Minuten</strong>. Auf einen Ersttermin warten Sie in der Regel nur etwa 2 Wochen.</li>
+    </ul>
+
+    <h2>Häufige Fragen</h2>
+    <div class="faq">
+      <details>
+        <summary>Behandeln Sie auch Alkoholabhängigkeit?</summary>
+        <p>Nein. Die Behandlung richtet sich an Menschen mit stoffgebundenen oder Verhaltenssüchten – mit Ausnahme von Alkoholabhängigkeit.</p>
+      </details>
+      <details>
+        <summary>Wie gehen Sie in der Suchtbehandlung vor?</summary>
+        <p>Ein zentrales Element ist die motivierende Gesprächsführung (Motivational Interviewing). Dabei geht es darum, eigene Beweggründe für Veränderung zu klären, statt Druck aufzubauen. Ergänzend arbeite ich verhaltenstherapeutisch an auslösenden Situationen, Bewältigungsstrategien und Rückfallprophylaxe.</p>
+      </details>
+      <details>
+        <summary>Wird meine Behandlung vertraulich behandelt?</summary>
+        <p>Ja. Als Psychologischer Psychotherapeut unterliege ich der gesetzlichen Schweigepflicht. Inhalte der Behandlung werden nicht ohne Ihre ausdrückliche Einwilligung weitergegeben.</p>
+      </details>
+      <details>
+        <summary>Was kostet eine Therapiesitzung?</summary>
+        <p>Für Selbstzahler und privat Versicherte wird nach der Gebührenordnung für Ärzte (GOÄ, analog) abgerechnet: 153 € pro Sitzung à 50 Minuten. Bei gesetzlich Versicherten rechne ich direkt über die Kassenärztliche Vereinigung ab – Sie gehen nicht in Vorleistung.</p>
+      </details>
+      <details>
+        <summary>Wie schnell bekomme ich einen Termin?</summary>
+        <p>Für Selbstzahler und privat Versicherte liegt die Wartezeit auf einen Ersttermin in der Regel bei etwa 2 Wochen. Gesetzlich Versicherte kommen nach einem Erstgespräch auf die Warteliste; dort beträgt die Wartezeit derzeit im Schnitt 6 bis 9 Monate. Grund ist die gesetzliche Regulierung: Begrenzt sind sowohl die Zahl der Kassensitze für Psychotherapie als auch die Behandlungskapazität, die eine einzelne Praxis für gesetzlich Versicherte bereitstellen darf.</p>
+      </details>
+      <details>
+        <summary>Mit welchen Methoden arbeiten Sie?</summary>
+        <p>Mein Schwerpunkt ist ausschließlich die Verhaltenstherapie. Durch meine Erfahrung in Kliniken und im tiefenpsychologischen Bereich fließen je nach Anliegen Elemente aus Schematherapie, achtsamkeitsbasierten Verfahren sowie DBT und Skills-Training ein.</p>
+      </details>
+    </div>
+    <p style="font-size:14.5px; color:var(--text-soft); margin-top:18px;">Weitere Fragen zu Terminen, Kosten und Ablauf beantworte ich in den <a href="../index.html#faq">häufigen Fragen auf der Startseite</a>.</p>
   </div>
 </section>
 

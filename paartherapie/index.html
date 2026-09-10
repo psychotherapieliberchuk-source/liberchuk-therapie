@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Paartherapie Düsseldorf – Privat & Selbstzahler | liberchuk-therapie.de</title>
-<meta name="description" content="Paartherapie in Düsseldorf: Kommunikation stärken, Konflikte lösen, die Beziehung nachhaltig verbessern. Individuelle Termine für Privatpatienten und Selbstzahler.">
+<meta name="description" content="Paartherapie in Düsseldorf: Sitzungen à 60 Minuten für 200 €, vor Ort oder online. Kommunikation stärken, Konflikte lösen – Ersttermin meist in rund 2 Wochen.">
 <link rel="canonical" href="https://liberchuk-therapie.de/paartherapie/">
 <link rel="alternate" hreflang="de" href="https://liberchuk-therapie.de/paartherapie/">
 <link rel="alternate" hreflang="ru" href="https://liberchuk-therapie.de/ru/paartherapie/">
@@ -12,7 +12,7 @@
 <link rel="alternate" hreflang="x-default" href="https://liberchuk-therapie.de/paartherapie/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&amp;family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
@@ -23,24 +23,116 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Start",
-      "item": "https://liberchuk-therapie.de/"
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Start",
+          "item": "https://liberchuk-therapie.de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Schwerpunkte",
+          "item": "https://liberchuk-therapie.de/#schwerpunkte"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Paartherapie"
+        }
+      ]
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Schwerpunkte",
-      "item": "https://liberchuk-therapie.de/#schwerpunkte"
+      "@type": "MedicalTherapy",
+      "@id": "https://liberchuk-therapie.de/paartherapie/#service",
+      "name": "Paartherapie",
+      "url": "https://liberchuk-therapie.de/paartherapie/",
+      "provider": {
+        "@id": "https://liberchuk-therapie.de/#practice"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Düsseldorf"
+      },
+      "availableLanguage": [
+        "de",
+        "ru",
+        "uk"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "200",
+        "priceCurrency": "EUR",
+        "description": "Paartherapie-Sitzung à 60 Minuten",
+        "availability": "https://schema.org/InStock"
+      }
     },
     {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Paartherapie"
+      "@type": "FAQPage",
+      "@id": "https://liberchuk-therapie.de/paartherapie/#faq",
+      "inLanguage": "de",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was kostet eine Paartherapie-Sitzung?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Eine reguläre Sitzung dauert 60 Minuten und kostet 200 €. Längere Sitzungen sind auf Wunsch buchbar und werden entsprechend höher berechnet."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Zahlt die Krankenkasse Paartherapie?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Paartherapie ist grundsätzlich eine Selbstzahlerleistung und wird von keiner Krankenkasse übernommen. Eine eng begrenzte Ausnahme: Liegt bei einer Partnerin oder einem Partner eine psychische Erkrankung mit Krankheitswert vor, können im Rahmen dieser Behandlung einzelne, klar abgegrenzte Themen in höchstens drei bis vier Paargesprächen bearbeitet werden – das ersetzt keine vollwertige Paartherapie."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie viele Sitzungen braucht eine Paartherapie?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In der Regel benötigen wir zunächst 2 bis 3 Sitzungen, um zu verstehen, wo die Hindernisse in Dynamik und Kommunikation liegen. Danach sind je nach Anliegen meist 5 bis 10 weitere Sitzungen sinnvoll."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "In welchem Abstand finden die Sitzungen statt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Meist alle 2 bis 3 Wochen. In den Sitzungen entstehen Impulse, die im Alltag erst erprobt und geübt werden müssen – ein wöchentlicher Rhythmus wäre dafür in der Regel zu eng."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Müssen wir zum ersten Termin zu zweit kommen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In der Regel kommen beide Partner gemeinsam. Gibt es heikle Themen, die Sie zunächst lieber allein besprechen möchten, sind vorab auch getrennte Einzelgespräche möglich."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ist Paartherapie auch online möglich?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Paartherapie ist sowohl in der Praxis in Düsseldorf als auch per Videosprechstunde möglich."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie schnell bekommen wir einen Termin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Für den Ersttermin ist in der Regel eine Wartezeit von etwa 2 Wochen einzuplanen."
+          }
+        }
+      ]
     }
   ]
 }
@@ -100,14 +192,14 @@
 <section class="page-hero">
   <div class="container">
     <div class="sp-icon sp-icon-lg"><img src="../assets/img/icons/paartherapie.png" alt=""></div>
-    <div class="subhead">Selbstzahler-Leistung</div>
+    <div class="subhead">Selbstzahler-Leistung · vor Ort oder online</div>
     <h1>Paartherapie in Düsseldorf</h1>
     <p class="lead">Kommunikation stärken, Konflikte lösen und die Beziehung nachhaltig verbessern – in einer geschützten Umgebung mit offenem Austausch.</p>
 
     <div class="price-fasttrack">
+      <div class="item"><div class="label">Sitzungsdauer</div><div class="value">60 Minuten</div></div>
+      <div class="item"><div class="label">Kosten pro Sitzung</div><div class="value">200 €</div></div>
       <div class="item"><div class="label">Ersttermin</div><div class="value">ca. 2 Wochen</div></div>
-      <div class="item"><div class="label">Abrechnung</div><div class="value">in der Regel Selbstzahler</div></div>
-      <div class="item"><div class="label">Format</div><div class="value">vor Ort oder online</div></div>
     </div>
 
     <div class="cta-row">
@@ -120,7 +212,7 @@
   <div class="container prose">
     <h2>Gemeinsam neue Wege finden</h2>
     <p>Paartherapie ist eine Form der Psychotherapie, die sich auf die Verbesserung von Beziehungen zwischen Partnern konzentriert. Dabei werden gemeinsame Probleme und Herausforderungen besprochen und Lösungen entwickelt. In einer geschützten Umgebung werden die Kommunikation und das Verständnis füreinander gestärkt.</p>
-    <p>Die Therapie kann helfen, Konflikte zu lösen, die Beziehung zu stärken und eine glücklichere Zukunft zu ermöglichen. Eine Paartherapie ist für jedes Paar geeignet, das Probleme in seiner Beziehung hat oder seine Bindung stärken möchte.</p>
+    <p>Die Therapie kann helfen, Konflikte zu bearbeiten, die Beziehung zu stärken und wieder mehr Verbindung herzustellen. Eine Paartherapie ist für jedes Paar geeignet, das Schwierigkeiten in seiner Beziehung erlebt oder seine Bindung vertiefen möchte.</p>
 
     <h2>Typische Themen in der Paartherapie</h2>
     <ul>
@@ -131,7 +223,58 @@
       <li>Wunsch, die Bindung zu vertiefen und zu stärken</li>
     </ul>
 
-    <div class="callout">Grundsätzlich werden die Kosten einer Paartherapie von keiner Versicherung übernommen. Es gibt jedoch Ausnahmefälle, in denen eine Erstattung möglich ist – bitte sprechen Sie mich darauf an.</div>
+    <h2>So läuft eine Paartherapie ab</h2>
+    <ul>
+      <li><strong>Erste 2 bis 3 Sitzungen: verstehen, worum es geht.</strong> Wir lernen uns kennen und arbeiten heraus, an welchen Stellen in Ihrer Dynamik und Kommunikation es hakt – und warum diese Hindernisse entstanden sind.</li>
+      <li><strong>Danach in der Regel 5 bis 10 Sitzungen.</strong> Je nach Anliegen arbeiten wir an konkreten Veränderungen in Kommunikation und Umgang miteinander.</li>
+      <li><strong>Rhythmus: meist alle 2 bis 3 Wochen.</strong> Aus jeder Sitzung entstehen Impulse, die im Alltag erprobt und geübt werden wollen – eine Woche ist dafür meist zu kurz.</li>
+      <li><strong>Zum ersten Termin kommen in der Regel beide Partner gemeinsam.</strong> Wenn es heikle Themen gibt, die Sie zunächst lieber allein ansprechen möchten, sind vorab auch getrennte Einzelgespräche möglich.</li>
+    </ul>
+
+    <div class="callout">Wie viel sich verändert, hängt sehr stark davon ab, wie bereit und motiviert beide Partner sind – auch <em>zwischen</em> den Sitzungen an Kommunikation, Beziehung und dem eigenen Verhalten zu arbeiten. Die Sitzungen geben Impulse; die Umsetzung im Alltag entscheidet.</div>
+
+    <h2>Kosten &amp; Abrechnung</h2>
+    <ul>
+      <li>Eine Sitzung dauert in der Regel <strong>60 Minuten und kostet 200 €</strong>.</li>
+      <li>Auf Wunsch sind <strong>längere Sitzungen</strong> buchbar; diese werden entsprechend höher berechnet.</li>
+      <li>Paartherapie ist eine <strong>Selbstzahlerleistung</strong> – die Kosten werden grundsätzlich von keiner Krankenkasse übernommen.</li>
+    </ul>
+    <p>Es gibt eine eng begrenzte Ausnahme: Liegt bei einer Partnerin oder einem Partner eine psychische Erkrankung mit Krankheitswert vor, können einzelne, klar abgegrenzte Themen im Rahmen dieser Behandlung in <strong>höchstens drei bis vier Paargesprächen</strong> bearbeitet werden. Das ist ausdrücklich keine vollwertige Paartherapie, sondern eine eng umgrenzte begleitende Intervention.</p>
+
+    <h2>Vor Ort oder online</h2>
+    <p>Paartherapie ist sowohl in der Praxis in Düsseldorf als auch per Videosprechstunde möglich – hilfreich, wenn Sie an unterschiedlichen Orten wohnen oder terminlich eingespannt sind.</p>
+
+    <h2>Häufige Fragen</h2>
+    <div class="faq">
+      <details>
+        <summary>Was kostet eine Paartherapie-Sitzung?</summary>
+        <p>Eine reguläre Sitzung dauert 60 Minuten und kostet 200 €. Längere Sitzungen sind auf Wunsch buchbar und werden entsprechend höher berechnet.</p>
+      </details>
+      <details>
+        <summary>Zahlt die Krankenkasse Paartherapie?</summary>
+        <p>Nein. Paartherapie ist grundsätzlich eine Selbstzahlerleistung und wird von keiner Krankenkasse übernommen. Eine eng begrenzte Ausnahme: Liegt bei einer Partnerin oder einem Partner eine psychische Erkrankung mit Krankheitswert vor, können im Rahmen dieser Behandlung einzelne, klar abgegrenzte Themen in höchstens drei bis vier Paargesprächen bearbeitet werden – das ersetzt keine vollwertige Paartherapie.</p>
+      </details>
+      <details>
+        <summary>Wie viele Sitzungen braucht eine Paartherapie?</summary>
+        <p>In der Regel benötigen wir zunächst 2 bis 3 Sitzungen, um zu verstehen, wo die Hindernisse in Dynamik und Kommunikation liegen. Danach sind je nach Anliegen meist 5 bis 10 weitere Sitzungen sinnvoll.</p>
+      </details>
+      <details>
+        <summary>In welchem Abstand finden die Sitzungen statt?</summary>
+        <p>Meist alle 2 bis 3 Wochen. In den Sitzungen entstehen Impulse, die im Alltag erst erprobt und geübt werden müssen – ein wöchentlicher Rhythmus wäre dafür in der Regel zu eng.</p>
+      </details>
+      <details>
+        <summary>Müssen wir zum ersten Termin zu zweit kommen?</summary>
+        <p>In der Regel kommen beide Partner gemeinsam. Gibt es heikle Themen, die Sie zunächst lieber allein besprechen möchten, sind vorab auch getrennte Einzelgespräche möglich.</p>
+      </details>
+      <details>
+        <summary>Ist Paartherapie auch online möglich?</summary>
+        <p>Ja. Paartherapie ist sowohl in der Praxis in Düsseldorf als auch per Videosprechstunde möglich.</p>
+      </details>
+      <details>
+        <summary>Wie schnell bekommen wir einen Termin?</summary>
+        <p>Für den Ersttermin ist in der Regel eine Wartezeit von etwa 2 Wochen einzuplanen.</p>
+      </details>
+    </div>
   </div>
 </section>
 
