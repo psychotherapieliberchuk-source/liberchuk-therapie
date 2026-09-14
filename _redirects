@@ -1,0 +1,12 @@
+# Sicherheitsnetz: alte WordPress-Pfade, die von aussen (falsch)
+# mit der neuen Domain verlinkt werden, statt auf 404 zu laufen.
+# Gefunden ueber Ahrefs "Crawled pages" am 14.09.2026.
+
+/author/welowe/                                    /                          301
+/online-therapie/                                   /                          301
+/psychotherapie/                                     /#schwerpunkte             301
+/supervision/                                        /                          301
+/coaching/                                           /                          301
+/allgemeine-psychotherapie/                          /                          301
+/suchtberatung-und-therapie-in-duesseldorf/          /suchttherapie/            301
+/datenschutzerklaerung/                              /datenschutz/              301
