@@ -104,12 +104,13 @@ header.site-header .container {
   padding-bottom: 14px;
   gap: 20px;
 }
-.brand { display: flex; align-items: center; gap: 14px; text-decoration: none; }
-.brand-mark { height: 46px; width: auto; flex-shrink: 0; }
-.brand-divider { width: 3px; align-self: stretch; background: var(--navy); border-radius: 2px; flex-shrink: 0; }
+.brand { display: flex; align-items: center; gap: 13px; text-decoration: none; }
+.brand-badge { width: 46px; height: 46px; border-radius: 50%; background: #EEF4FA; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.brand-badge img { height: 33px; width: auto; }
 .brand-text { display: inline-flex; flex-direction: column; }
-.brand-word { display: block; font-family: "PT Sans", "Segoe UI", Arial, sans-serif; font-weight: 700; font-size: 21px; line-height: 1.15; letter-spacing: 0; white-space: nowrap; color: var(--navy-logo); text-transform: lowercase; }
-.brand-tagline { display: block; font-size: 14.5px; font-weight: 700; color: var(--navy-logo); margin-top: 3px; letter-spacing: .12em; text-transform: lowercase; white-space: nowrap; }
+.brand-word { display: block; font-family: "PT Sans", "Segoe UI", Arial, sans-serif; font-size: 20px; line-height: 1.15; letter-spacing: -.01em; white-space: nowrap; color: var(--navy-logo); text-transform: lowercase; }
+.brand-word b { font-weight: 800; }
+.brand-word .thin { font-weight: 400; }
 nav.mainnav ul {
   display: flex;
   list-style: none;
@@ -415,17 +416,13 @@ footer.site-footer .bottom { border-top: 1px solid rgba(255,255,255,.12); margin
 
   /* Header kompakter */
   header.site-header .container { padding-top: 10px; padding-bottom: 10px; }
-  .brand-mark { height: 36px; }
+  .brand-badge { width: 36px; height: 36px; }
+  .brand-badge img { height: 25px; }
   .brand-word { font-size: 17px; }
-  .brand-tagline { font-size: 13px; }
   header.site-header .btn-primary { padding: 10px 20px; }
 
   .badge-row { gap: 8px; }
   .badge { font-size: 12px; padding: 6px 12px; }
-}
-
-@media (max-width: 420px) {
-  .brand-tagline { display: none; }
 }
 
 /* Von Netlify auf veröffentlichten Seiten eingefügtes Badge/HUD ausblenden */
