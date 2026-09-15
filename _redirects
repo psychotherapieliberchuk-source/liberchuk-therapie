@@ -10,3 +10,11 @@
 /allgemeine-psychotherapie/                          /                          301
 /suchtberatung-und-therapie-in-duesseldorf/          /suchttherapie/            301
 /datenschutzerklaerung/                              /datenschutz/              301
+
+# Ergaenzt 2026-09-15: reale 404-Aufrufe aus Netlify Web Analytics (7-Tage-Fenster).
+/psychotherapie/adhs-diagnostik-fuer-erwachsene-in-duesseldorf/   /adhs-diagnostik/       301
+/psychotherapie/behandlung-von-zwangsstoerungen-in-duesseldorf/   /zwangserkrankungen/    301
+/expertise/                                          /#ueber-mich               301
+/sitemap_index.xml                                   /sitemap.xml               301
+/wp-sitemap.xml                                      /sitemap.xml               301
+/apple-touch-icon-precomposed.png                    /apple-touch-icon.png      301
