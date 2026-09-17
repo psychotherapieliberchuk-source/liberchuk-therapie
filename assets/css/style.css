@@ -345,6 +345,10 @@ nav.mainnav a:hover { border-color: var(--orange); }
   padding: 28px 30px;
   box-shadow: var(--shadow-lift);
 }
+.hero-card-portrait { width: 150px; height: 150px; border-radius: 50%; overflow: hidden; margin: 0 auto 14px; border: 2px solid rgba(255,255,255,.18); }
+.hero-card-portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.hero-card-name { text-align: center; font-family: "PT Serif", Georgia, serif; font-size: 19px; font-weight: 700; color: #fff; margin-bottom: 2px; }
+.hero-card-role { text-align: center; font-size: 13px; color: var(--lightblue); margin-bottom: 20px; }
 .hero-card .headline { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--lightblue); font-weight: 700; margin-bottom: 8px; }
 .hero-card .tel { display: inline-block; font-size: 21px; font-weight: 700; color: #fff; text-decoration: none; line-height: 1.15; }
 .hero-card .tel:hover { color: var(--orange); }
@@ -395,6 +399,13 @@ nav.mainnav a:hover { border-color: var(--orange); }
   transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
 }
 .sp-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lift); border-color: var(--lightblue); }
+.sp-card-highlight { position: relative; border-color: var(--orange); }
+.sp-tag {
+  position: absolute; top: -12px; right: 20px;
+  background: var(--orange); color: var(--navy-dark);
+  font-size: 12px; font-weight: 700; padding: 5px 12px;
+  border-radius: 999px; box-shadow: 0 4px 10px rgba(31,53,80,.18);
+}
 .sp-card .sp-icon {
   width: 62px; height: 62px; margin-bottom: 18px;
   border-radius: 50%; background: var(--bg-soft);
@@ -448,6 +459,27 @@ nav.mainnav a:hover { border-color: var(--orange); }
 
 /* ---------- Reviews ---------- */
 .reviews { background: var(--bg-soft); }
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 22px;
+  box-shadow: var(--shadow);
+  margin: 0;
+  text-align: left;
+}
+.testimonial .stars { color: var(--orange); font-size: 15px; letter-spacing: 2px; margin-bottom: 10px; }
+.testimonial p { font-size: 14.5px; color: var(--text); line-height: 1.6; margin: 0 0 14px; font-style: italic; }
+.testimonial cite { font-size: 13px; color: var(--text-soft); font-style: normal; font-weight: 600; margin-top: auto; }
 
 /* ---------- Kontakt ---------- */
 .kontakt .container { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
@@ -509,6 +541,8 @@ footer.site-footer .bottom { border-top: 1px solid rgba(255,255,255,.12); margin
   font-size: 15px; color: var(--navy-dark);
 }
 
+.faq-group { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--orange-dark); font-weight: 700; margin: 28px 0 12px; }
+.faq-group:first-child { margin-top: 0; }
 .faq details {
   border: 1px solid var(--border); border-radius: 10px; padding: 4px 20px; margin-bottom: 12px; background: #fff;
 }
@@ -584,6 +618,10 @@ footer.site-footer .bottom { border-top: 1px solid rgba(255,255,255,.12); margin
 
   .badge-row { gap: 8px; }
   .badge { font-size: 12px; padding: 6px 12px; }
+
+  /* Telefonzeile im Kontakt-CTA: Tage/Uhrzeit auf eigene Zeile, kein Komma davor */
+  .kontakt .tel-comma { display: none; }
+  .kontakt .tel-hours { display: block; margin-top: 4px; }
 }
 
 /* Von Netlify auf veröffentlichten Seiten eingefügtes Badge/HUD ausblenden */
