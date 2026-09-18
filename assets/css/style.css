@@ -481,6 +481,9 @@ nav.mainnav a:hover { border-color: var(--orange); }
 .testimonial p { font-size: 14.5px; color: var(--text); line-height: 1.6; margin: 0 0 14px; font-style: italic; }
 .testimonial cite { font-size: 13px; color: var(--text-soft); font-style: normal; font-weight: 600; margin-top: auto; }
 
+.pull-quote { background: var(--navy-dark); color: #fff; border-radius: var(--radius); border-left: 4px solid var(--orange); padding: 22px 24px; margin: 24px 0; box-shadow: var(--shadow); }
+.pull-quote p { font-family: "PT Serif", serif; font-style: italic; font-size: 17px; line-height: 1.5; margin: 0; color: #fff; }
+
 /* ---------- Kontakt ---------- */
 .kontakt .container { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
 .kontakt-card {
